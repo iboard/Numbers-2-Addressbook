@@ -5,6 +5,11 @@ Version 0, 2010-09-18
   
 Use it for free without any warranty!
 
+    This is a quick-n-dirty solution for a friend. It is not thought to be "a product"!
+    But you may save a lot of time figuring out how the tables of an Number's document
+    are being cascaded within the xml-file. Just take a look at app/controllers/n2v_controller.rb
+
+
 ## Extract the XML-File from your Numbers-Document
 
   1. Open "Package" of your Numbers-Document and locate a file named "index.xml.gz"
