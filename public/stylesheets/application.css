@@ -1,0 +1,10 @@
+* {
+	font-family: Arial;
+}
+tr.even {
+	background: #FFF270;
+}
+
+tr.odd {
+	background: #C5BC59;
+}

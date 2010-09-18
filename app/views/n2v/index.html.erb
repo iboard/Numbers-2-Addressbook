@@ -1,0 +1,10 @@
+<h1>Convert Numbers-Document to Addressbook VCards</h1>
+
+<%= form_tag convert_path+".vcard", :multipart => true do %>
+    
+    <p>
+        Upload Numbers Document:  <%= file_field_tag :uploaded_file %>
+        <%= submit_tag :submit %>
+    </p>
+    
+<% end %>

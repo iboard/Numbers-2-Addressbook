@@ -1,0 +1,19 @@
+<% @records.each do |record| %>
+BEGIN:VCARD
+VERSION:3.0
+N:<%=record[1] -%>;<%= record[2] %>;;<%= record[0] %>;
+FN:<%= [record[0],record[2],record[1]].reject{|r| r.blank? }.join(" ") %>
+ORG:<%= record[13].to_s.humanize %>
+TITLE:<%= record[0] %>
+EMAIL;type=INTERNET;type=HOME;type=pref:<%= record[12] %>
+TEL;type=HOME:<%= record[7] %>
+TEL;type=WORK:<%= record[8] %>
+TEL;type=CELL;type=pref:<%= record[9] %>
+TEL;type=OTHER:<%= record[10] %>
+TEL;type=FAX:<%= record[11] %>
+item1.ADR;type=HOME:;;<%= record[4] -%>;<%= record[6] -%>;;<%= record[5] -%>;Austria
+item1.X-ABADR:at
+<% unless record[3].blank? -%>BDAY;value=date:<%= record[3] %><% end %>
+END:VCARD
+
+<% end %>
