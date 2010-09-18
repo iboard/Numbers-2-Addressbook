@@ -1,11 +1,11 @@
-= convert a Numbers-Document to Addressbook-VCards for import
+# convert a Numbers-Document to Addressbook-VCards for import
 
 A little helper by Andreas Altendorfer <andreas@altendorfer.at>
 Version 0, 2010-09-18
   
 Use it for free without any warranty!
 
-== Extract the XML-File from your Numbers-Document
+## Extract the XML-File from your Numbers-Document
 
   1. Open "Package" of your Numbers-Document and locate a file named "index.xml.gz"
   2. Unzip this file to index.xml or any other name
@@ -17,7 +17,7 @@ Use it for free without any warranty!
   8. A file named addresses.vcf will be downloaded to your Download-folder
      - if enabled this file will be imported to Addressbook immediately
      
-== Requirements for your Numbers-document
+## Requirements for your Numbers-document
 
   - There should be one table only
   - The first row should be the header-row (Names of columns though names doesn't matter)
@@ -25,7 +25,7 @@ Use it for free without any warranty!
   
 If you want to change the columns see app/views/n2v/create.vcard.erb where the VCard-records will be created.
 
-=== Columns
+### Columns
 
 **The original Numbers Document**:
 
